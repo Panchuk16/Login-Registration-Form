@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peopling</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <input type="checkbox" id="modal-toggle" hidden>
+    <div class="overlay"></div>
+    <div class="wrapped">
+    <main>
+        <div class="container">
+
+            <!-- Logo -->
+            <div class="banner">
+                <img id="logo" src="./public/img/logo.svg">
+            </div>
+
+            <!-- Registration or Login -->
+            <div class="log-reg">
+                <h1 id="greetings">Let's get peopling!</h1>
+                <h2 id="greet-join">Join us:</h2>
+
+                <!-- Google -->
+                <div class="button">
+                    <a href="http://google.com" class="button-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-google"  viewBox="0 0 16 16">
+                            <path fill="rgb(212, 20, 90)" d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z"/>
+                        </svg>
+                        &nbsp;
+                        Sign up with Google</a>
+                </div>
+
+                <!-- Apple -->
+                <div class="button">
+                    <a href="http://apple.com" class="button-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" background-color="none" class="bi bi-apple" viewBox="0 0 16 16">
+                            <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
+                            <path fill="rgb(212, 20, 90)" d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
+                        </svg>
+                        &nbsp;
+                        Sign up with Apple</a>
+                </div>
+                <div id="divider">
+                    <span id="divider-text">or</span>
+                </div>
+
+                <!-- Create account -->
+                <div class="button">
+                    <a class="button-link create-acc" href="#register">
+                        <svg id="create-plus" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-plus" viewBox="0 0 16 16">
+                            <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                            <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5"/>
+                        </svg>
+                        &nbsp;
+                        Create account</a>
+                </div>
+
+                <!-- Terms and privacy -->
+                <div>
+                    <p>By signing up, you agree to the <a href="./terms.html" target="_blank">Terms of Service</a> and <a href="./privacy.html" target="_blank">Privacy Policy.</a></p>
+                </div>
+                <h2 id="login">Have an account?</h2>
+
+                <!-- Sign in -->
+                <div class="button">
+                    <a href="#signin" class="button-link">
+                        &nbsp;
+                        Sign in</a>
+                </div>
+            </div>
+        </div> 
+
+        <!-- Registration popup -->
+        <div id="register" class="popup">
+            <a href="#" class="popup-area"></a>
+            <div class="popup-body">
+                <form id="registration-form" action="#confirm" method="post" aria-required="true">
+                    <div class="popup-content">
+                        <a href="#" class="popup-close">
+                            <svg class="close-button" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                            </svg></a>
+                        
+                        <div class="popup-title">
+                            <div>Create your account</div>
+
+                            <!-- Logo -->
+                            <div>
+                                <img id="mini-logo" src="./public/img/logo_no_text.svg">
+                            </div>
+                        </div>
+                        
+                        <!-- Registration Form -->
+                        <div class="popup-text">
+                            <input type="text" placeholder="Name" required>
+                            <input type="email" placeholder="Email" required>
+                            <input type="password" placeholder="Password" required minlength="8">
+                            <p>Date of birth</p>
+                            <div class="selectors-row">
+                                <div class="selector-container">
+                                    <select id="daySelect" required>
+                                        <option value="" disabled selected hidden>Day</option>
+                                        <script>
+                                            // Day Selector
+                                            for (let day = 1; day <= 31; day++) {
+                                                document.write(`<option value="${day}">${day}</option>`);
+                                            }
+                                        </script>
+                                    </select>
+                                </div>
+                                <div class="selector-container">
+                                    <select id="monthSelect" required>
+                                        <!-- Month selector -->
+                                        <option value="" disabled selected hidden>Month</option>
+                                        <option value="1">January</option>
+                                        <option value="2">February</option>
+                                        <option value="3">March</option>
+                                        <option value="4">April</option>
+                                        <option value="5">May</option>
+                                        <option value="6">June</option>
+                                        <option value="7">July</option>
+                                        <option value="8">August</option>
+                                        <option value="9">September</option>
+                                        <option value="10">October</option>
+                                        <option value="11">November</option>
+                                        <option value="12">December</option>
+                                    </select>
+                                </div>
+                                <div class="selector-container">
+                                    <select id="yearSelect" required>
+                                        <option value="" disabled selected hidden>Year</option>
+                                        <script>
+                                            // Year Selector
+                                            for (let year = 2024; year >= 1900; year--) {
+                                                document.write(`<option value="${year}">${year}</option>`);
+                                            }
+                                        </script>
+                                    </select>
+                                </div>
+                            </div>                
+                        </div>
+                        <div id="continue-div">
+                            <button type="submit" id="continue-button" type="submit" class="button-link create-acc">
+                                Continue</button>
+                        </div>  
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- Email verification -->
+        <div id="confirm" class="popup">
+            <a href="#" class="popup-area"></a>
+            <div class="popup-body">
+                <form id="confirmation-form" action="#reg-done" method="post" aria-required="true">
+                    <div class="popup-content">
+                        <a href="#" class="popup-close">
+                            <svg class="close-button" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                            </svg></a>
+
+                        <div class="popup-title">
+                            <div>Check your email</div>
+
+                            <!-- Logo -->
+                            <div>
+                                <img id="mini-logo" src="./public/img/logo_no_text.svg">
+                            </div>
+                        </div>
+
+                        <div class="popup-text">
+                            <p id="provide-code">Provide the code below</p>
+
+                            <!-- Code input -->
+                            <input type="text" placeholder="Verification code" required>
+
+                            <a href="#confirm"><p>Send again</p></a>
+                        </div>
+                        <div id="continue-div">
+                            <button type="submit" id="continue-button" class="button-link create-acc">
+                                Confirm</button>
+                        </div>  
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- Registration is done -->
+        <div id="reg-done" class="popup">
+            <a href="#" class="popup-area"></a>
+            <div class="popup-body">
+                <form id="confirmation-form" action="#" method="post">
+                    <div class="popup-content">
+                        <a href="#" class="popup-close">
+                            <svg class="close-button" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                            </svg></a>
+                        <div class="popup-title">
+                            <div>You are all set</div>
+
+                            <!-- Logo -->
+                            <div>
+                                <img id="mini-logo" src="./public/img/logo_no_text.svg">
+                            </div>
+                        </div>
+
+                        <div id="continue-div">
+                            <h2 id="ready">Ready?</h2>
+                            <a class="button-link create-acc" href="./peopling.html">
+                            Explore
+                            </a>
+                        </div>  
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- Sign in -->
+        <div id="signin" class="popup">
+            <a href="#" class="popup-area"></a>
+            <div class="popup-body">
+                <form id="confirmation-form" action="./peopling.html" method="post">
+                    <div class="popup-content" id="signin-popup">
+                        <a href="#" class="popup-close">
+                            <svg class="close-button" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                            </svg></a>
+
+                        <div class="popup-title">
+                            <div>Signing in</div>
+
+                            <!-- Logo -->
+                            <div>
+                                <img id="mini-logo" src="./public/img/logo_no_text.svg">
+                            </div>
+                        </div>
+
+                        <!-- Sign in Form -->
+                        <div>
+                            <input type="email" placeholder="Email" required>
+                            <input type="password" placeholder="Password" required minlength="8">
+                            <div id="signin-div">
+                                <button type="submit" id="signin-button" class="button-link create-acc">
+                                Sign in
+                                </button>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <h4 id="footer-text">&copy; Copyright 2024. Made by Yaroslav Panchuk</h4>
+    </footer>
+</body>
+</html>

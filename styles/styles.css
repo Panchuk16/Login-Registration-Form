@@ -496,6 +496,10 @@ main {
         transform: translate(0, 0);
     }
 
+    .signin-form{
+        max-width: 80%;
+    }
+
     input {
         min-height: 4vh;
     }
